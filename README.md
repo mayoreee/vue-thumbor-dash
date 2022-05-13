@@ -1,5 +1,3 @@
 # vue-thumbor-dash
 
-This template should help get you started developing with Vue 3 in Vite.
-
-```
+Vue.js component for integrating Dash's distributed image thumbnail service in client applications
