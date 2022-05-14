@@ -1,6 +1,7 @@
 <script>
 import "babel-polyfill"; // es6 shim
-import Uploader from "vue-image-crop-upload/";
+import Uploader from "./uploaderComponent.vue";
+import { generateUploadURL } from "js-thumbor-dash/src/url/url.js";
 
 export default {
   // Children of this component
@@ -47,7 +48,7 @@ export default {
   data() {
     return {
       show: true,
-      url: "http://" + this.masternode + "/image",
+      url: generateUploadURL(this.masternode),
       width: this.imageWidth.toString(),
       height: this.imageHeight.toString(),
       imgDataUrl: "",
@@ -56,6 +57,7 @@ export default {
   // methods in the component
   methods: {
     toggleShow() {
+      console.warn("this is a warning");
       this.show = !this.show;
     },
     /**
@@ -66,7 +68,6 @@ export default {
      */
     // eslint-disable-next-line no-unused-vars
     cropSuccess(imgDataUrl, field) {
-      console.log("-------- crop success --------");
       this.imgDataUrl = imgDataUrl;
     },
     /**
@@ -75,10 +76,9 @@ export default {
      * [param] jsonData  server api return data, already json encode
      * [param] field
      */
+    // eslint-disable-next-line no-unused-vars
     cropUploadSuccess(jsonData, field) {
-      console.log("-------- upload success --------");
       console.log(jsonData);
-      console.log("field: " + field);
     },
     /**
      * upload fail
@@ -86,17 +86,9 @@ export default {
      * [param] status    server api return error status, like 500
      * [param] field
      */
+    // eslint-disable-next-line no-unused-vars
     cropUploadFail(status, field) {
-      console.log("-------- upload fail --------");
       console.log(status);
-      console.log("field: " + field);
-    },
-    /**
-     * submit document to platform
-     */
-    submitDocument() {
-      //TODO submit to Platform
-      console.log("Image is being submitted to platform...");
     },
   },
 };
