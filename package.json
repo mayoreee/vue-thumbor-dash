@@ -1,6 +1,7 @@
 {
   "name": "vue-thumbor-dash",
   "version": "0.0.1",
+  "main": "thumborDash.vue",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -8,15 +9,12 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "vue-demi": "^0.12.5"
-  },
-  "peerDependenciesMeta": {
-    "@vue/composition-api": {
-      "optional": true
-    }
+    "babel-polyfill": "^6.26.0",
+    "js-thumbor-dash": "github:mayoreee/js-thumbor-dash",
+    "vue": "^3.2.33",
+    "vue-image-crop-upload": "^3.0.3"
   },
   "devDependencies": {
-    "vue": "^3.2.33",
     "@rushstack/eslint-patch": "^1.1.0",
     "@vitejs/plugin-vue": "^2.3.1",
     "@vue/eslint-config-prettier": "^7.0.0",
