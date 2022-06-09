@@ -56,7 +56,6 @@ export default {
   // methods in the component
   methods: {
     toggleShow() {
-      console.warn("this is a warning");
       this.show = !this.show;
     },
     /**
