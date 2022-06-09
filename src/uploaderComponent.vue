@@ -815,7 +815,7 @@ export default {
     async upload() {
       const imageBlob = data2blob(this.createImgUrl, this.mime);
       const imageArrayBuffer = await imageBlob.arrayBuffer();
-      // eslint-disable-next-line no-undef
+      
       const imageBuffer = Buffer.from(imageArrayBuffer);
       const options = {
         network: this.network,
