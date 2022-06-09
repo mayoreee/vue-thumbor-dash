@@ -9,7 +9,6 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
     "js-thumbor-dash": "github:mayoreee/js-thumbor-dash",
     "vue": "^3.2.33",
     "vue-image-crop-upload": "^3.0.3"

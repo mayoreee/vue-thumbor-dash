@@ -1,5 +1,4 @@
 <script>
-import "babel-polyfill"; // es6 shim
 import Uploader from "./uploaderComponent.vue";
 import { generateUploadURL } from "js-thumbor-dash/src/url/url.js";
 
@@ -49,8 +48,8 @@ export default {
     return {
       show: true,
       url: generateUploadURL(this.masternode),
-      width: this.imageWidth.toString(),
-      height: this.imageHeight.toString(),
+      width: this.imageWidth,
+      height: this.imageHeight,
       imgDataUrl: "",
     };
   },
@@ -106,8 +105,6 @@ export default {
       :width="width"
       :height="height"
       :url="url"
-      :params="params"
-      :headers="headers"
       img-format="png"
       langType="en"
       imgFormat="jpg"
