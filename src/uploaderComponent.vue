@@ -170,6 +170,7 @@ import language from "vue-image-crop-upload/utils/language.js";
 import mimes from "vue-image-crop-upload/utils/mimes.js";
 import data2blob from "vue-image-crop-upload/utils/data2blob.js";
 import effectRipple from "vue-image-crop-upload/utils/effectRipple.js";
+import { Buffer } from "buffer";
 import { ThumbnailClient } from "js-thumbor-dash";
 
 export default {
@@ -815,7 +816,7 @@ export default {
     async upload() {
       const imageBlob = data2blob(this.createImgUrl, this.mime);
       const imageArrayBuffer = await imageBlob.arrayBuffer();
-      // eslint-disable-next-line no-undef
+
       const imageBuffer = Buffer.from(imageArrayBuffer);
       const options = {
         network: this.network,
