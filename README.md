@@ -22,7 +22,7 @@ import thumborDash from "vue-thumbor-dash/src/thumborDash.vue";
 | ------------ | ------ | ---------------------------------------------- | ------------------------------ |
 | network      | String | "testnet"                                      | Dash network                   |
 | masternode   | String | "localhost:8888"                               | Server address [ip:port]       |
-| contractId   | String | "Bw7U7xUiwoE5wkkrJxbBLdf442TiY63SDvCDZLNrzTHr" | Thumnail data contract id      |
+| contractId   | String | "DbBHu3Ct1zD1AYAiw58V7QXT22B3k7qRLDLfaXqiRQp5" | Thumnail data contract id      |
 | documentType | String | "thumbnailField"                               | Optional                       |
 | mnemonic     | String | ""                                             | Wallet mnemonic                |
 | ownerId      | String | ""                                             | Identity of owner              |
