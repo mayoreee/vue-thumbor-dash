@@ -826,7 +826,7 @@ export default {
         image: imageBuffer,
         resizeValues: this.resizeValues,
       };
-      console.log("Debug: the options are \n", options);
+
       const thumbnailClient = new ThumbnailClient(options);
 
       thumbnailClient
