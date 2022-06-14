@@ -186,7 +186,7 @@ export default {
     },
     contractId: {
       type: String,
-      default: "Bw7U7xUiwoE5wkkrJxbBLdf442TiY63SDvCDZLNrzTHr",
+      default: "DbBHu3Ct1zD1AYAiw58V7QXT22B3k7qRLDLfaXqiRQp5",
     },
     documentType: {
       type: String,
