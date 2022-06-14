@@ -29,3 +29,5 @@ import thumborDash from "vue-thumbor-dash/src/thumborDash.vue";
 | imageWidth   | Number | 200                                            | Width of image                 |
 | imageHeight  | Number | 200                                            | Height of image                |
 | resizeValues | Array  | [minWidth, minHeight, maxWidth, maxHeight]     | Integer array of resize limits |
+| show         | boolean  | true     | Show the image crop-and-upload ui component |
+| imgDataUrl   | String  | ""     | URL of default placeholder image |
